@@ -1,0 +1,782 @@
+[08:17:50] === NanoDB Test Runner Started ===
+[08:17:50] NanoDB started. Buffer pool capacity: 200 pages
+[08:17:50] Catalog: Registered table 'customer' at path 'data/customer.db'
+[08:17:50] NanoDB: Table 'customer' created.
+[08:17:50] Catalog: Registered table 'orders' at path 'data/orders.db'
+[08:17:50] NanoDB: Table 'orders' created.
+[08:17:50] Catalog: Registered table 'lineitem' at path 'data/lineitem.db'
+[08:17:50] NanoDB: Table 'lineitem' created.
+[08:17:50] Index: Building AVL index for table 'customer' (20000 rows)...
+[08:17:50] [CACHE] Page 199 evicted via LRU (total: 200)
+[08:17:50] [CACHE] Page 399 evicted via LRU (total: 400)
+[08:17:50] [CACHE] Page 599 evicted via LRU (total: 600)
+[08:17:50] [CACHE] Page 799 evicted via LRU (total: 800)
+[08:17:50] [CACHE] Page 999 evicted via LRU (total: 1000)
+[08:17:50] [CACHE] Page 1199 evicted via LRU (total: 1200)
+[08:17:50] [CACHE] Page 1399 evicted via LRU (total: 1400)
+[08:17:50] Index: AVL tree built — 6330 nodes, height=14
+[08:17:50] Index: Building AVL index for table 'orders' (30000 rows)...
+[08:17:50] [CACHE] Page 1599 evicted via LRU (total: 1600)
+[08:17:50] [CACHE] Page 132 evicted via LRU (total: 1800)
+[08:17:50] [CACHE] Page 332 evicted via LRU (total: 2000)
+[08:17:50] [CACHE] Page 532 evicted via LRU (total: 2200)
+[08:17:50] [CACHE] Page 732 evicted via LRU (total: 2400)
+[08:17:50] [CACHE] Page 932 evicted via LRU (total: 2600)
+[08:17:50] [CACHE] Page 1132 evicted via LRU (total: 2800)
+[08:17:50] [CACHE] Page 1332 evicted via LRU (total: 3000)
+[08:17:50] Index: AVL tree built — 10206 nodes, height=16
+[08:17:50] Index: Building AVL index for table 'lineitem' (50000 rows)...
+[08:17:50] [CACHE] Page 1532 evicted via LRU (total: 3200)
+[08:17:50] [CACHE] Page 153 evicted via LRU (total: 3400)
+[08:17:50] [CACHE] Page 353 evicted via LRU (total: 3600)
+[08:17:50] [CACHE] Page 553 evicted via LRU (total: 3800)
+[08:17:50] [CACHE] Page 753 evicted via LRU (total: 4000)
+[08:17:50] [CACHE] Page 953 evicted via LRU (total: 4200)
+[08:17:51] [CACHE] Page 1153 evicted via LRU (total: 4400)
+[08:17:51] [CACHE] Page 1353 evicted via LRU (total: 4600)
+[08:17:51] [CACHE] Page 1553 evicted via LRU (total: 4800)
+[08:17:51] [CACHE] Page 1753 evicted via LRU (total: 5000)
+[08:17:51] [CACHE] Page 1953 evicted via LRU (total: 5200)
+[08:17:51] Index: AVL tree built — 50000 nodes, height=16
+[08:17:51] Workload: Executing: SELECT customer WHERE c_nationkey == 1
+[08:17:51] Query: SELECT on 'customer' WHERE [c_nationkey == 1]
+[08:17:51] Scan: Sequential scan on 'customer' (20000 rows)
+[08:17:51] Parser: Infix "c_nationkey == 1" converted to Postfix "c_nationkey 1 =="
+[08:17:51] [CACHE] Page 2153 evicted via LRU (total: 5400)
+[08:17:51] [CACHE] Page 179 evicted via LRU (total: 5600)
+[08:17:51] [CACHE] Page 379 evicted via LRU (total: 5800)
+[08:17:51] [CACHE] Page 579 evicted via LRU (total: 6000)
+[08:17:51] [CACHE] Page 779 evicted via LRU (total: 6200)
+[08:17:51] [CACHE] Page 979 evicted via LRU (total: 6400)
+[08:17:51] [CACHE] Page 1179 evicted via LRU (total: 6600)
+[08:17:51] [CACHE] Page 1379 evicted via LRU (total: 6800)
+[08:17:51] Scan: Sequential scan complete — 0/20000 rows matched in 143.00 ms
+[08:17:51] Workload: Executing: SELECT customer WHERE c_nationkey == 5
+[08:17:51] Query: SELECT on 'customer' WHERE [c_nationkey == 5]
+[08:17:51] Scan: Sequential scan on 'customer' (20000 rows)
+[08:17:51] Parser: Infix "c_nationkey == 5" converted to Postfix "c_nationkey 5 =="
+[08:17:51] [CACHE] Page 1579 evicted via LRU (total: 7000)
+[08:17:51] [CACHE] Page 112 evicted via LRU (total: 7200)
+[08:17:51] [CACHE] Page 312 evicted via LRU (total: 7400)
+[08:17:51] [CACHE] Page 512 evicted via LRU (total: 7600)
+[08:17:51] [CACHE] Page 712 evicted via LRU (total: 7800)
+[08:17:51] [CACHE] Page 912 evicted via LRU (total: 8000)
+[08:17:51] [CACHE] Page 1112 evicted via LRU (total: 8200)
+[08:17:51] [CACHE] Page 1312 evicted via LRU (total: 8400)
+[08:17:51] Scan: Sequential scan complete — 0/20000 rows matched in 133.00 ms
+[08:17:51] Workload: Executing: SELECT customer WHERE c_nationkey == 10
+[08:17:51] Query: SELECT on 'customer' WHERE [c_nationkey == 10]
+[08:17:51] Scan: Sequential scan on 'customer' (20000 rows)
+[08:17:51] Parser: Infix "c_nationkey == 10" converted to Postfix "c_nationkey 10 =="
+[08:17:51] [CACHE] Page 1512 evicted via LRU (total: 8600)
+[08:17:51] [CACHE] Page 45 evicted via LRU (total: 8800)
+[08:17:51] [CACHE] Page 245 evicted via LRU (total: 9000)
+[08:17:51] [CACHE] Page 445 evicted via LRU (total: 9200)
+[08:17:51] [CACHE] Page 645 evicted via LRU (total: 9400)
+[08:17:51] [CACHE] Page 845 evicted via LRU (total: 9600)
+[08:17:51] [CACHE] Page 1045 evicted via LRU (total: 9800)
+[08:17:51] [CACHE] Page 1245 evicted via LRU (total: 10000)
+[08:17:51] [CACHE] Page 1445 evicted via LRU (total: 10200)
+[08:17:51] Scan: Sequential scan complete — 0/20000 rows matched in 266.00 ms
+[08:17:51] Workload: Executing: SELECT customer WHERE c_mktsegment == "BUILDING"
+[08:17:51] Query: SELECT on 'customer' WHERE [c_mktsegment == "BUILDING"]
+[08:17:51] Scan: Sequential scan on 'customer' (20000 rows)
+[08:17:51] Parser: Infix "c_mktsegment == BUILDING" converted to Postfix "c_mktsegment BUILDING =="
+[08:17:51] [CACHE] Page 1645 evicted via LRU (total: 10400)
+[08:17:51] [CACHE] Page 178 evicted via LRU (total: 10600)
+[08:17:51] [CACHE] Page 378 evicted via LRU (total: 10800)
+[08:17:51] [CACHE] Page 578 evicted via LRU (total: 11000)
+[08:17:51] [CACHE] Page 778 evicted via LRU (total: 11200)
+[08:17:51] [CACHE] Page 978 evicted via LRU (total: 11400)
+[08:17:51] [CACHE] Page 1178 evicted via LRU (total: 11600)
+[08:17:51] [CACHE] Page 1378 evicted via LRU (total: 11800)
+[08:17:52] Scan: Sequential scan complete — 0/20000 rows matched in 121.00 ms
+[08:17:52] Workload: Executing: SELECT customer WHERE c_mktsegment == "AUTOMOBILE"
+[08:17:52] Query: SELECT on 'customer' WHERE [c_mktsegment == "AUTOMOBILE"]
+[08:17:52] Scan: Sequential scan on 'customer' (20000 rows)
+[08:17:52] Parser: Infix "c_mktsegment == AUTOMOBILE" converted to Postfix "c_mktsegment AUTOMOBILE =="
+[08:17:52] [CACHE] Page 1578 evicted via LRU (total: 12000)
+[08:17:52] [CACHE] Page 111 evicted via LRU (total: 12200)
+[08:17:52] [CACHE] Page 311 evicted via LRU (total: 12400)
+[08:17:52] [CACHE] Page 511 evicted via LRU (total: 12600)
+[08:17:52] [CACHE] Page 711 evicted via LRU (total: 12800)
+[08:17:52] [CACHE] Page 911 evicted via LRU (total: 13000)
+[08:17:52] [CACHE] Page 1111 evicted via LRU (total: 13200)
+[08:17:52] [CACHE] Page 1311 evicted via LRU (total: 13400)
+[08:17:52] Scan: Sequential scan complete — 0/20000 rows matched in 97.00 ms
+[08:17:52] Workload: Executing: SELECT customer WHERE c_mktsegment == "MACHINERY"
+[08:17:52] Query: SELECT on 'customer' WHERE [c_mktsegment == "MACHINERY"]
+[08:17:52] Scan: Sequential scan on 'customer' (20000 rows)
+[08:17:52] Parser: Infix "c_mktsegment == MACHINERY" converted to Postfix "c_mktsegment MACHINERY =="
+[08:17:52] [CACHE] Page 1511 evicted via LRU (total: 13600)
+[08:17:52] [CACHE] Page 44 evicted via LRU (total: 13800)
+[08:17:52] [CACHE] Page 244 evicted via LRU (total: 14000)
+[08:17:52] [CACHE] Page 444 evicted via LRU (total: 14200)
+[08:17:52] [CACHE] Page 644 evicted via LRU (total: 14400)
+[08:17:52] [CACHE] Page 844 evicted via LRU (total: 14600)
+[08:17:52] [CACHE] Page 1044 evicted via LRU (total: 14800)
+[08:17:52] [CACHE] Page 1244 evicted via LRU (total: 15000)
+[08:17:52] [CACHE] Page 1444 evicted via LRU (total: 15200)
+[08:17:52] Scan: Sequential scan complete — 0/20000 rows matched in 91.00 ms
+[08:17:52] Workload: Executing: SELECT customer WHERE c_mktsegment == "HOUSEHOLD"
+[08:17:52] Query: SELECT on 'customer' WHERE [c_mktsegment == "HOUSEHOLD"]
+[08:17:52] Scan: Sequential scan on 'customer' (20000 rows)
+[08:17:52] Parser: Infix "c_mktsegment == HOUSEHOLD" converted to Postfix "c_mktsegment HOUSEHOLD =="
+[08:17:52] [CACHE] Page 1644 evicted via LRU (total: 15400)
+[08:17:52] [CACHE] Page 177 evicted via LRU (total: 15600)
+[08:17:52] [CACHE] Page 377 evicted via LRU (total: 15800)
+[08:17:52] [CACHE] Page 577 evicted via LRU (total: 16000)
+[08:17:52] [CACHE] Page 777 evicted via LRU (total: 16200)
+[08:17:52] [CACHE] Page 977 evicted via LRU (total: 16400)
+[08:17:52] [CACHE] Page 1177 evicted via LRU (total: 16600)
+[08:17:52] [CACHE] Page 1377 evicted via LRU (total: 16800)
+[08:17:52] Scan: Sequential scan complete — 0/20000 rows matched in 90.00 ms
+[08:17:52] Workload: Executing: SELECT customer WHERE c_mktsegment == "FURNITURE"
+[08:17:52] Query: SELECT on 'customer' WHERE [c_mktsegment == "FURNITURE"]
+[08:17:52] Scan: Sequential scan on 'customer' (20000 rows)
+[08:17:52] Parser: Infix "c_mktsegment == FURNITURE" converted to Postfix "c_mktsegment FURNITURE =="
+[08:17:52] [CACHE] Page 1577 evicted via LRU (total: 17000)
+[08:17:52] [CACHE] Page 110 evicted via LRU (total: 17200)
+[08:17:52] [CACHE] Page 310 evicted via LRU (total: 17400)
+[08:17:52] [CACHE] Page 510 evicted via LRU (total: 17600)
+[08:17:52] [CACHE] Page 710 evicted via LRU (total: 17800)
+[08:17:52] [CACHE] Page 910 evicted via LRU (total: 18000)
+[08:17:52] [CACHE] Page 1110 evicted via LRU (total: 18200)
+[08:17:52] [CACHE] Page 1310 evicted via LRU (total: 18400)
+[08:17:52] Scan: Sequential scan complete — 0/20000 rows matched in 88.00 ms
+[08:17:52] Workload: Executing: SELECT orders WHERE o_orderstatus == "O"
+[08:17:52] Query: SELECT on 'orders' WHERE [o_orderstatus == "O"]
+[08:17:52] Scan: Sequential scan on 'orders' (30000 rows)
+[08:17:52] Parser: Infix "o_orderstatus == O" converted to Postfix "o_orderstatus O =="
+[08:17:52] [CACHE] Page 1510 evicted via LRU (total: 18600)
+[08:17:52] [CACHE] Page 43 evicted via LRU (total: 18800)
+[08:17:52] [CACHE] Page 243 evicted via LRU (total: 19000)
+[08:17:52] [CACHE] Page 443 evicted via LRU (total: 19200)
+[08:17:52] [CACHE] Page 643 evicted via LRU (total: 19400)
+[08:17:52] [CACHE] Page 843 evicted via LRU (total: 19600)
+[08:17:52] [CACHE] Page 1043 evicted via LRU (total: 19800)
+[08:17:52] [CACHE] Page 1243 evicted via LRU (total: 20000)
+[08:17:52] Scan: Sequential scan complete — 0/30000 rows matched in 133.00 ms
+[08:17:52] Workload: Executing: SELECT orders WHERE o_orderstatus == "F"
+[08:17:52] Query: SELECT on 'orders' WHERE [o_orderstatus == "F"]
+[08:17:52] Scan: Sequential scan on 'orders' (30000 rows)
+[08:17:52] Parser: Infix "o_orderstatus == F" converted to Postfix "o_orderstatus F =="
+[08:17:52] [CACHE] Page 1443 evicted via LRU (total: 20200)
+[08:17:52] [CACHE] Page 64 evicted via LRU (total: 20400)
+[08:17:52] [CACHE] Page 264 evicted via LRU (total: 20600)
+[08:17:52] [CACHE] Page 464 evicted via LRU (total: 20800)
+[08:17:52] [CACHE] Page 664 evicted via LRU (total: 21000)
+[08:17:52] [CACHE] Page 864 evicted via LRU (total: 21200)
+[08:17:52] [CACHE] Page 1064 evicted via LRU (total: 21400)
+[08:17:52] [CACHE] Page 1264 evicted via LRU (total: 21600)
+[08:17:52] Scan: Sequential scan complete — 0/30000 rows matched in 137.00 ms
+[08:17:52] Workload: Executing: SELECT customer WHERE c_acctbal > 5000
+[08:17:52] Query: SELECT on 'customer' WHERE [c_acctbal > 5000]
+[08:17:52] Scan: Sequential scan on 'customer' (20000 rows)
+[08:17:52] Parser: Infix "c_acctbal > 5000" converted to Postfix "c_acctbal 5000 >"
+[08:17:56] [CACHE] Page 1464 evicted via LRU (total: 21800)
+[08:18:01] [CACHE] Page 85 evicted via LRU (total: 22000)
+[08:18:06] [CACHE] Page 285 evicted via LRU (total: 22200)
+[08:18:09] [CACHE] Page 485 evicted via LRU (total: 22400)
+[08:18:12] [CACHE] Page 685 evicted via LRU (total: 22600)
+[08:18:15] [CACHE] Page 885 evicted via LRU (total: 22800)
+[08:18:18] [CACHE] Page 1085 evicted via LRU (total: 23000)
+[08:18:21] [CACHE] Page 1285 evicted via LRU (total: 23200)
+[08:18:24] Scan: Sequential scan complete — 3144/20000 rows matched in 31629.00 ms
+[08:18:24] Workload: Executing: SELECT customer WHERE c_acctbal > 8000
+[08:18:24] Query: SELECT on 'customer' WHERE [c_acctbal > 8000]
+[08:18:24] Scan: Sequential scan on 'customer' (20000 rows)
+[08:18:24] Parser: Infix "c_acctbal > 8000" converted to Postfix "c_acctbal 8000 >"
+[08:18:24] [CACHE] Page 1485 evicted via LRU (total: 23400)
+[08:18:27] [CACHE] Page 18 evicted via LRU (total: 23600)
+[08:18:30] [CACHE] Page 218 evicted via LRU (total: 23800)
+[08:18:34] [CACHE] Page 418 evicted via LRU (total: 24000)
+[08:18:37] [CACHE] Page 618 evicted via LRU (total: 24200)
+[08:18:40] [CACHE] Page 818 evicted via LRU (total: 24400)
+[08:18:43] [CACHE] Page 1018 evicted via LRU (total: 24600)
+[08:18:47] [CACHE] Page 1218 evicted via LRU (total: 24800)
+[08:18:51] [CACHE] Page 1418 evicted via LRU (total: 25000)
+[08:18:51] Scan: Sequential scan complete — 3043/20000 rows matched in 27359.00 ms
+[08:18:51] Workload: Executing: SELECT customer WHERE c_acctbal < 0
+[08:18:51] Query: SELECT on 'customer' WHERE [c_acctbal < 0]
+[08:18:51] Scan: Sequential scan on 'customer' (20000 rows)
+[08:18:51] Parser: Infix "c_acctbal < 0" converted to Postfix "c_acctbal 0 <"
+[08:18:51] [CACHE] Page 1618 evicted via LRU (total: 25200)
+[08:18:51] [CACHE] Page 151 evicted via LRU (total: 25400)
+[08:18:51] [CACHE] Page 351 evicted via LRU (total: 25600)
+[08:18:51] [CACHE] Page 551 evicted via LRU (total: 25800)
+[08:18:51] [CACHE] Page 751 evicted via LRU (total: 26000)
+[08:18:51] [CACHE] Page 951 evicted via LRU (total: 26200)
+[08:18:52] [CACHE] Page 1151 evicted via LRU (total: 26400)
+[08:18:52] [CACHE] Page 1351 evicted via LRU (total: 26600)
+[08:18:52] Scan: Sequential scan complete — 0/20000 rows matched in 88.00 ms
+[08:18:52] Workload: Executing: SELECT customer WHERE c_nationkey > 20
+[08:18:52] Query: SELECT on 'customer' WHERE [c_nationkey > 20]
+[08:18:52] Scan: Sequential scan on 'customer' (20000 rows)
+[08:18:52] Parser: Infix "c_nationkey > 20" converted to Postfix "c_nationkey 20 >"
+[08:18:54] [CACHE] Page 1551 evicted via LRU (total: 26800)
+[08:18:59] [CACHE] Page 84 evicted via LRU (total: 27000)
+[08:19:04] [CACHE] Page 284 evicted via LRU (total: 27200)
+[08:19:10] [CACHE] Page 484 evicted via LRU (total: 27400)
+[08:19:15] [CACHE] Page 684 evicted via LRU (total: 27600)
+[08:19:21] [CACHE] Page 884 evicted via LRU (total: 27800)
+[08:19:26] [CACHE] Page 1084 evicted via LRU (total: 28000)
+[08:19:32] [CACHE] Page 1284 evicted via LRU (total: 28200)
+[08:19:36] Scan: Sequential scan complete — 5471/20000 rows matched in 44786.00 ms
+[08:19:36] Workload: Executing: SELECT customer WHERE c_nationkey < 5
+[08:19:36] Query: SELECT on 'customer' WHERE [c_nationkey < 5]
+[08:19:36] Scan: Sequential scan on 'customer' (20000 rows)
+[08:19:36] Parser: Infix "c_nationkey < 5" converted to Postfix "c_nationkey 5 <"
+[08:19:38] [CACHE] Page 1484 evicted via LRU (total: 28400)
+[08:19:58] [CACHE] Page 17 evicted via LRU (total: 28600)
+[08:20:21] [CACHE] Page 217 evicted via LRU (total: 28800)
+[08:20:35] [CACHE] Page 417 evicted via LRU (total: 29000)
+[08:20:45] [CACHE] Page 617 evicted via LRU (total: 29200)
+[08:21:00] [CACHE] Page 817 evicted via LRU (total: 29400)
+[08:21:15] [CACHE] Page 1017 evicted via LRU (total: 29600)
+[08:21:30] [CACHE] Page 1217 evicted via LRU (total: 29800)
+[08:21:45] [CACHE] Page 1417 evicted via LRU (total: 30000)
+[08:21:48] Scan: Sequential scan complete — 14528/20000 rows matched in 131642.00 ms
+[08:21:48] Workload: Executing: SELECT orders WHERE o_totalprice > 400000
+[08:21:48] Query: SELECT on 'orders' WHERE [o_totalprice > 400000]
+[08:21:48] Scan: Sequential scan on 'orders' (30000 rows)
+[08:21:48] Parser: Infix "o_totalprice > 400000" converted to Postfix "o_totalprice 400000 >"
+[08:21:50] [CACHE] Page 1617 evicted via LRU (total: 30200)
+[08:21:53] [CACHE] Page 150 evicted via LRU (total: 30400)
+[08:21:56] [CACHE] Page 350 evicted via LRU (total: 30600)
+[08:21:58] [CACHE] Page 550 evicted via LRU (total: 30800)
+[08:22:00] [CACHE] Page 750 evicted via LRU (total: 31000)
+[08:22:03] [CACHE] Page 950 evicted via LRU (total: 31200)
+[08:22:06] [CACHE] Page 1150 evicted via LRU (total: 31400)
+[08:22:08] [CACHE] Page 1350 evicted via LRU (total: 31600)
+[08:22:09] Scan: Sequential scan complete — 1473/30000 rows matched in 20570.00 ms
+[08:22:09] Workload: Executing: SELECT orders WHERE o_totalprice > 450000
+[08:22:09] Query: SELECT on 'orders' WHERE [o_totalprice > 450000]
+[08:22:09] Scan: Sequential scan on 'orders' (30000 rows)
+[08:22:09] Parser: Infix "o_totalprice > 450000" converted to Postfix "o_totalprice 450000 >"
+[08:22:11] [CACHE] Page 1550 evicted via LRU (total: 31800)
+[08:22:14] [CACHE] Page 171 evicted via LRU (total: 32000)
+[08:22:16] [CACHE] Page 371 evicted via LRU (total: 32200)
+[08:22:18] [CACHE] Page 571 evicted via LRU (total: 32400)
+[08:22:21] [CACHE] Page 771 evicted via LRU (total: 32600)
+[08:22:23] [CACHE] Page 971 evicted via LRU (total: 32800)
+[08:22:26] [CACHE] Page 1171 evicted via LRU (total: 33000)
+[08:22:29] [CACHE] Page 1371 evicted via LRU (total: 33200)
+[08:22:29] Scan: Sequential scan complete — 1473/30000 rows matched in 19895.00 ms
+[08:22:29] Workload: Executing: SELECT orders WHERE o_shippriority == 0
+[08:22:29] Query: SELECT on 'orders' WHERE [o_shippriority == 0]
+[08:22:29] Scan: Sequential scan on 'orders' (30000 rows)
+[08:22:29] Parser: Infix "o_shippriority == 0" converted to Postfix "o_shippriority 0 =="
+[08:22:47] [CACHE] Page 1571 evicted via LRU (total: 33400)
+[08:23:06] [CACHE] Page 192 evicted via LRU (total: 33600)
+[08:23:26] [CACHE] Page 392 evicted via LRU (total: 33800)
+[08:23:45] [CACHE] Page 592 evicted via LRU (total: 34000)
+[08:24:04] [CACHE] Page 792 evicted via LRU (total: 34200)
+[08:24:23] [CACHE] Page 992 evicted via LRU (total: 34400)
+[08:24:42] [CACHE] Page 1192 evicted via LRU (total: 34600)
+[08:24:59] Scan: Sequential scan complete — 16906/30000 rows matched in 150748.00 ms
+[08:24:59] Workload: Executing: SELECT orders WHERE o_orderpriority == "1-URGENT"
+[08:24:59] Query: SELECT on 'orders' WHERE [o_orderpriority == "1-URGENT"]
+[08:24:59] Scan: Sequential scan on 'orders' (30000 rows)
+[08:24:59] Parser: Infix "o_orderpriority == 1-URGENT" converted to Postfix "o_orderpriority 1-URGENT =="
+[08:24:59] [CACHE] Page 1392 evicted via LRU (total: 34800)
+[08:24:59] [CACHE] Page 13 evicted via LRU (total: 35000)
+[08:24:59] [CACHE] Page 213 evicted via LRU (total: 35200)
+[08:24:59] [CACHE] Page 413 evicted via LRU (total: 35400)
+[08:24:59] [CACHE] Page 613 evicted via LRU (total: 35600)
+[08:24:59] [CACHE] Page 813 evicted via LRU (total: 35800)
+[08:24:59] [CACHE] Page 1013 evicted via LRU (total: 36000)
+[08:25:00] [CACHE] Page 1213 evicted via LRU (total: 36200)
+[08:25:00] Scan: Sequential scan complete — 0/30000 rows matched in 140.00 ms
+[08:25:00] Workload: Executing: SELECT orders WHERE o_orderpriority == "5-LOW"
+[08:25:00] Query: SELECT on 'orders' WHERE [o_orderpriority == "5-LOW"]
+[08:25:00] Scan: Sequential scan on 'orders' (30000 rows)
+[08:25:00] Parser: Infix "o_orderpriority == 5-LOW" converted to Postfix "o_orderpriority 5-LOW =="
+[08:25:00] [CACHE] Page 1413 evicted via LRU (total: 36400)
+[08:25:00] [CACHE] Page 34 evicted via LRU (total: 36600)
+[08:25:00] [CACHE] Page 234 evicted via LRU (total: 36800)
+[08:25:00] [CACHE] Page 434 evicted via LRU (total: 37000)
+[08:25:00] [CACHE] Page 634 evicted via LRU (total: 37200)
+[08:25:00] [CACHE] Page 834 evicted via LRU (total: 37400)
+[08:25:00] [CACHE] Page 1034 evicted via LRU (total: 37600)
+[08:25:00] [CACHE] Page 1234 evicted via LRU (total: 37800)
+[08:25:00] Scan: Sequential scan complete — 0/30000 rows matched in 115.00 ms
+[08:25:00] Workload: Executing: SELECT customer WHERE c_acctbal > 5000 AND c_nationkey == 1
+[08:25:00] Query: SELECT on 'customer' WHERE [c_acctbal > 5000 AND c_nationkey == 1]
+[08:25:00] Scan: Sequential scan on 'customer' (20000 rows)
+[08:25:00] Parser: Infix "c_acctbal > 5000 AND c_nationkey == 1" converted to Postfix "c_acctbal 5000 > c_nationkey 1 == AND"
+[08:25:00] [CACHE] Page 1434 evicted via LRU (total: 38000)
+[08:25:00] [CACHE] Page 55 evicted via LRU (total: 38200)
+[08:25:00] [CACHE] Page 255 evicted via LRU (total: 38400)
+[08:25:00] [CACHE] Page 455 evicted via LRU (total: 38600)
+[08:25:00] [CACHE] Page 655 evicted via LRU (total: 38800)
+[08:25:00] [CACHE] Page 855 evicted via LRU (total: 39000)
+[08:25:00] [CACHE] Page 1055 evicted via LRU (total: 39200)
+[08:25:00] [CACHE] Page 1255 evicted via LRU (total: 39400)
+[08:25:00] [CACHE] Page 1455 evicted via LRU (total: 39600)
+[08:25:00] Scan: Sequential scan complete — 0/20000 rows matched in 95.00 ms
+[08:25:00] Workload: Executing: SELECT customer WHERE c_acctbal > 7000 AND c_mktsegment == "BUILDING"
+[08:25:00] Query: SELECT on 'customer' WHERE [c_acctbal > 7000 AND c_mktsegment == "BUILDING"]
+[08:25:00] Scan: Sequential scan on 'customer' (20000 rows)
+[08:25:00] Parser: Infix "c_acctbal > 7000 AND c_mktsegment == BUILDING" converted to Postfix "c_acctbal 7000 > c_mktsegment BUILDING == AND"
+[08:25:00] [CACHE] Page 1655 evicted via LRU (total: 39800)
+[08:25:00] [CACHE] Page 188 evicted via LRU (total: 40000)
+[08:25:00] [CACHE] Page 388 evicted via LRU (total: 40200)
+[08:25:00] [CACHE] Page 588 evicted via LRU (total: 40400)
+[08:25:00] [CACHE] Page 788 evicted via LRU (total: 40600)
+[08:25:00] [CACHE] Page 988 evicted via LRU (total: 40800)
+[08:25:00] [CACHE] Page 1188 evicted via LRU (total: 41000)
+[08:25:00] [CACHE] Page 1388 evicted via LRU (total: 41200)
+[08:25:00] Scan: Sequential scan complete — 0/20000 rows matched in 88.00 ms
+[08:25:00] Workload: Executing: SELECT customer WHERE c_nationkey == 15 OR c_nationkey == 16
+[08:25:00] Query: SELECT on 'customer' WHERE [c_nationkey == 15 OR c_nationkey == 16]
+[08:25:00] Scan: Sequential scan on 'customer' (20000 rows)
+[08:25:00] Parser: Infix "c_nationkey == 15 OR c_nationkey == 16" converted to Postfix "c_nationkey 15 == c_nationkey 16 == OR"
+[08:25:00] [CACHE] Page 1588 evicted via LRU (total: 41400)
+[08:25:00] [CACHE] Page 121 evicted via LRU (total: 41600)
+[08:25:00] [CACHE] Page 321 evicted via LRU (total: 41800)
+[08:25:00] [CACHE] Page 521 evicted via LRU (total: 42000)
+[08:25:00] [CACHE] Page 721 evicted via LRU (total: 42200)
+[08:25:00] [CACHE] Page 921 evicted via LRU (total: 42400)
+[08:25:00] [CACHE] Page 1121 evicted via LRU (total: 42600)
+[08:25:00] [CACHE] Page 1321 evicted via LRU (total: 42800)
+[08:25:00] Scan: Sequential scan complete — 0/20000 rows matched in 91.00 ms
+[08:25:00] Workload: Executing: SELECT customer WHERE c_mktsegment == "AUTOMOBILE" AND c_acctbal > 3000
+[08:25:00] Query: SELECT on 'customer' WHERE [c_mktsegment == "AUTOMOBILE" AND c_acctbal > 3000]
+[08:25:00] Scan: Sequential scan on 'customer' (20000 rows)
+[08:25:00] Parser: Infix "c_mktsegment == AUTOMOBILE AND c_acctbal > 3000" converted to Postfix "c_mktsegment AUTOMOBILE == c_acctbal 3000 > AND"
+[08:25:00] [CACHE] Page 1521 evicted via LRU (total: 43000)
+[08:25:00] [CACHE] Page 54 evicted via LRU (total: 43200)
+[08:25:00] [CACHE] Page 254 evicted via LRU (total: 43400)
+[08:25:00] [CACHE] Page 454 evicted via LRU (total: 43600)
+[08:25:00] [CACHE] Page 654 evicted via LRU (total: 43800)
+[08:25:00] [CACHE] Page 854 evicted via LRU (total: 44000)
+[08:25:00] [CACHE] Page 1054 evicted via LRU (total: 44200)
+[08:25:00] [CACHE] Page 1254 evicted via LRU (total: 44400)
+[08:25:00] [CACHE] Page 1454 evicted via LRU (total: 44600)
+[08:25:00] Scan: Sequential scan complete — 0/20000 rows matched in 99.00 ms
+[08:25:00] Workload: Executing: SELECT orders WHERE o_orderstatus == "O" AND o_shippriority == 0
+[08:25:00] Query: SELECT on 'orders' WHERE [o_orderstatus == "O" AND o_shippriority == 0]
+[08:25:00] Scan: Sequential scan on 'orders' (30000 rows)
+[08:25:00] Parser: Infix "o_orderstatus == O AND o_shippriority == 0" converted to Postfix "o_orderstatus O == o_shippriority 0 == AND"
+[08:25:00] [CACHE] Page 1654 evicted via LRU (total: 44800)
+[08:25:00] [CACHE] Page 187 evicted via LRU (total: 45000)
+[08:25:00] [CACHE] Page 387 evicted via LRU (total: 45200)
+[08:25:00] [CACHE] Page 587 evicted via LRU (total: 45400)
+[08:25:00] [CACHE] Page 787 evicted via LRU (total: 45600)
+[08:25:00] [CACHE] Page 987 evicted via LRU (total: 45800)
+[08:25:00] [CACHE] Page 1187 evicted via LRU (total: 46000)
+[08:25:00] Scan: Sequential scan complete — 0/30000 rows matched in 108.00 ms
+[08:25:00] Workload: Executing: SELECT orders WHERE o_totalprice > 200000 AND o_orderstatus == "F"
+[08:25:00] Query: SELECT on 'orders' WHERE [o_totalprice > 200000 AND o_orderstatus == "F"]
+[08:25:00] Scan: Sequential scan on 'orders' (30000 rows)
+[08:25:00] Parser: Infix "o_totalprice > 200000 AND o_orderstatus == F" converted to Postfix "o_totalprice 200000 > o_orderstatus F == AND"
+[08:25:00] [CACHE] Page 1387 evicted via LRU (total: 46200)
+[08:25:00] [CACHE] Page 8 evicted via LRU (total: 46400)
+[08:25:00] [CACHE] Page 208 evicted via LRU (total: 46600)
+[08:25:00] [CACHE] Page 408 evicted via LRU (total: 46800)
+[08:25:00] [CACHE] Page 608 evicted via LRU (total: 47000)
+[08:25:00] [CACHE] Page 808 evicted via LRU (total: 47200)
+[08:25:00] [CACHE] Page 1008 evicted via LRU (total: 47400)
+[08:25:00] [CACHE] Page 1208 evicted via LRU (total: 47600)
+[08:25:00] Scan: Sequential scan complete — 0/30000 rows matched in 113.00 ms
+[08:25:00] Workload: Executing: SELECT orders WHERE o_custkey == 100 OR o_custkey == 200
+[08:25:00] Query: SELECT on 'orders' WHERE [o_custkey == 100 OR o_custkey == 200]
+[08:25:00] Scan: Sequential scan on 'orders' (30000 rows)
+[08:25:00] Parser: Infix "o_custkey == 100 OR o_custkey == 200" converted to Postfix "o_custkey 100 == o_custkey 200 == OR"
+[08:25:01] [CACHE] Page 1408 evicted via LRU (total: 47800)
+[08:25:01] [CACHE] Page 29 evicted via LRU (total: 48000)
+[08:25:01] [CACHE] Page 229 evicted via LRU (total: 48200)
+[08:25:01] [CACHE] Page 429 evicted via LRU (total: 48400)
+[08:25:01] [CACHE] Page 629 evicted via LRU (total: 48600)
+[08:25:01] [CACHE] Page 829 evicted via LRU (total: 48800)
+[08:25:01] [CACHE] Page 1029 evicted via LRU (total: 49000)
+[08:25:01] [CACHE] Page 1229 evicted via LRU (total: 49200)
+[08:25:01] Scan: Sequential scan complete — 0/30000 rows matched in 104.00 ms
+[08:25:01] Workload: Executing: SELECT customer WHERE c_acctbal > 9000 OR c_nationkey == 25
+[08:25:01] Query: SELECT on 'customer' WHERE [c_acctbal > 9000 OR c_nationkey == 25]
+[08:25:01] Scan: Sequential scan on 'customer' (20000 rows)
+[08:25:01] Parser: Infix "c_acctbal > 9000 OR c_nationkey == 25" converted to Postfix "c_acctbal 9000 > c_nationkey 25 == OR"
+[08:25:01] [CACHE] Page 1429 evicted via LRU (total: 49400)
+[08:25:05] [CACHE] Page 50 evicted via LRU (total: 49600)
+[08:25:07] [CACHE] Page 250 evicted via LRU (total: 49800)
+[08:25:10] [CACHE] Page 450 evicted via LRU (total: 50000)
+[08:25:13] [CACHE] Page 650 evicted via LRU (total: 50200)
+[08:25:17] [CACHE] Page 850 evicted via LRU (total: 50400)
+[08:25:20] [CACHE] Page 1050 evicted via LRU (total: 50600)
+[08:25:24] [CACHE] Page 1250 evicted via LRU (total: 50800)
+[08:25:27] [CACHE] Page 1450 evicted via LRU (total: 51000)
+[08:25:27] Scan: Sequential scan complete — 3010/20000 rows matched in 26366.00 ms
+[08:25:27] Workload: Executing: SELECT customer WHERE (c_acctbal > 5000 AND c_mktsegment == "BUILDING") OR c_nationkey == 15
+[08:25:27] Query: SELECT on 'customer' WHERE [(c_acctbal > 5000 AND c_mktsegment == "BUILDING") OR c_nationkey == 15]
+[08:25:27] Scan: Sequential scan on 'customer' (20000 rows)
+[08:25:27] Parser: Infix "( c_acctbal > 5000 AND c_mktsegment == BUILDING ) OR c_nationkey == 15" converted to Postfix "c_acctbal 5000 > c_mktsegment BUILDING == AND c_nationkey 15 == OR"
+[08:25:27] [CACHE] Page 1650 evicted via LRU (total: 51200)
+[08:25:27] [CACHE] Page 183 evicted via LRU (total: 51400)
+[08:25:27] [CACHE] Page 383 evicted via LRU (total: 51600)
+[08:25:27] [CACHE] Page 583 evicted via LRU (total: 51800)
+[08:25:27] [CACHE] Page 783 evicted via LRU (total: 52000)
+[08:25:27] [CACHE] Page 983 evicted via LRU (total: 52200)
+[08:25:27] [CACHE] Page 1183 evicted via LRU (total: 52400)
+[08:25:27] [CACHE] Page 1383 evicted via LRU (total: 52600)
+[08:25:27] Scan: Sequential scan complete — 0/20000 rows matched in 93.00 ms
+[08:25:27] Workload: Executing: SELECT customer WHERE (c_nationkey > 10 AND c_nationkey < 20) OR c_acctbal > 9500
+[08:25:27] Query: SELECT on 'customer' WHERE [(c_nationkey > 10 AND c_nationkey < 20) OR c_acctbal > 9500]
+[08:25:27] Scan: Sequential scan on 'customer' (20000 rows)
+[08:25:27] Parser: Infix "( c_nationkey > 10 AND c_nationkey < 20 ) OR c_acctbal > 9500" converted to Postfix "c_nationkey 10 > c_nationkey 20 < AND c_acctbal 9500 > OR"
+[08:25:29] [CACHE] Page 1583 evicted via LRU (total: 52800)
+[08:25:32] [CACHE] Page 116 evicted via LRU (total: 53000)
+[08:25:35] [CACHE] Page 316 evicted via LRU (total: 53200)
+[08:25:38] [CACHE] Page 516 evicted via LRU (total: 53400)
+[08:25:41] [CACHE] Page 716 evicted via LRU (total: 53600)
+[08:25:44] [CACHE] Page 916 evicted via LRU (total: 53800)
+[08:25:47] [CACHE] Page 1116 evicted via LRU (total: 54000)
+[08:25:50] [CACHE] Page 1316 evicted via LRU (total: 54200)
+[08:25:53] Scan: Sequential scan complete — 3002/20000 rows matched in 25593.00 ms
+[08:25:53] Workload: Executing: SELECT orders WHERE (o_totalprice > 300000 AND o_orderstatus == "O") OR o_custkey == 1
+[08:25:53] Query: SELECT on 'orders' WHERE [(o_totalprice > 300000 AND o_orderstatus == "O") OR o_custkey == 1]
+[08:25:53] Scan: Sequential scan on 'orders' (30000 rows)
+[08:25:53] Parser: Infix "( o_totalprice > 300000 AND o_orderstatus == O ) OR o_custkey == 1" converted to Postfix "o_totalprice 300000 > o_orderstatus O == AND o_custkey 1 == OR"
+[08:25:53] [CACHE] Page 1516 evicted via LRU (total: 54400)
+[08:25:53] [CACHE] Page 49 evicted via LRU (total: 54600)
+[08:25:53] [CACHE] Page 249 evicted via LRU (total: 54800)
+[08:25:53] [CACHE] Page 449 evicted via LRU (total: 55000)
+[08:25:53] [CACHE] Page 649 evicted via LRU (total: 55200)
+[08:25:53] [CACHE] Page 849 evicted via LRU (total: 55400)
+[08:25:53] [CACHE] Page 1049 evicted via LRU (total: 55600)
+[08:25:53] [CACHE] Page 1249 evicted via LRU (total: 55800)
+[08:25:53] Scan: Sequential scan complete — 0/30000 rows matched in 120.00 ms
+[08:25:53] Workload: Executing: SELECT orders WHERE (o_totalprice > 100000 AND o_orderstatus != "F") OR o_shippriority == 0
+[08:25:53] Query: SELECT on 'orders' WHERE [(o_totalprice > 100000 AND o_orderstatus != "F") OR o_shippriority == 0]
+[08:25:53] Scan: Sequential scan on 'orders' (30000 rows)
+[08:25:53] Parser: Infix "( o_totalprice > 100000 AND o_orderstatus != F ) OR o_shippriority == 0" converted to Postfix "o_totalprice 100000 > o_orderstatus F != AND o_shippriority 0 == OR"
+[08:25:59] [CACHE] Page 1449 evicted via LRU (total: 56000)
+[08:26:18] [CACHE] Page 70 evicted via LRU (total: 56200)
+[08:26:36] [CACHE] Page 270 evicted via LRU (total: 56400)
+[08:26:54] [CACHE] Page 470 evicted via LRU (total: 56600)
+[08:27:12] [CACHE] Page 670 evicted via LRU (total: 56800)
+[08:27:31] [CACHE] Page 870 evicted via LRU (total: 57000)
+[08:27:50] [CACHE] Page 1070 evicted via LRU (total: 57200)
+[08:28:08] [CACHE] Page 1270 evicted via LRU (total: 57400)
+[08:28:19] Scan: Sequential scan complete — 16906/30000 rows matched in 146486.00 ms
+[08:28:19] Workload: Executing: SELECT customer WHERE (c_acctbal > 8000 OR c_acctbal < 0) AND c_mktsegment == "MACHINERY"
+[08:28:19] Query: SELECT on 'customer' WHERE [(c_acctbal > 8000 OR c_acctbal < 0) AND c_mktsegment == "MACHINERY"]
+[08:28:19] Scan: Sequential scan on 'customer' (20000 rows)
+[08:28:19] Parser: Infix "( c_acctbal > 8000 OR c_acctbal < 0 ) AND c_mktsegment == MACHINERY" converted to Postfix "c_acctbal 8000 > c_acctbal 0 < OR c_mktsegment MACHINERY == AND"
+[08:28:19] [CACHE] Page 1470 evicted via LRU (total: 57600)
+[08:28:19] [CACHE] Page 91 evicted via LRU (total: 57800)
+[08:28:19] [CACHE] Page 291 evicted via LRU (total: 58000)
+[08:28:19] [CACHE] Page 491 evicted via LRU (total: 58200)
+[08:28:19] [CACHE] Page 691 evicted via LRU (total: 58400)
+[08:28:19] [CACHE] Page 891 evicted via LRU (total: 58600)
+[08:28:19] [CACHE] Page 1091 evicted via LRU (total: 58800)
+[08:28:20] [CACHE] Page 1291 evicted via LRU (total: 59000)
+[08:28:20] Scan: Sequential scan complete — 0/20000 rows matched in 79.00 ms
+[08:28:20] Workload: Executing: SELECT customer WHERE (c_nationkey == 1 OR c_nationkey == 2) AND c_acctbal > 2000
+[08:28:20] Query: SELECT on 'customer' WHERE [(c_nationkey == 1 OR c_nationkey == 2) AND c_acctbal > 2000]
+[08:28:20] Scan: Sequential scan on 'customer' (20000 rows)
+[08:28:20] Parser: Infix "( c_nationkey == 1 OR c_nationkey == 2 ) AND c_acctbal > 2000" converted to Postfix "c_nationkey 1 == c_nationkey 2 == OR c_acctbal 2000 > AND"
+[08:28:20] [CACHE] Page 1491 evicted via LRU (total: 59200)
+[08:28:20] [CACHE] Page 24 evicted via LRU (total: 59400)
+[08:28:20] [CACHE] Page 224 evicted via LRU (total: 59600)
+[08:28:20] [CACHE] Page 424 evicted via LRU (total: 59800)
+[08:28:20] [CACHE] Page 624 evicted via LRU (total: 60000)
+[08:28:20] [CACHE] Page 824 evicted via LRU (total: 60200)
+[08:28:20] [CACHE] Page 1024 evicted via LRU (total: 60400)
+[08:28:20] [CACHE] Page 1224 evicted via LRU (total: 60600)
+[08:28:20] [CACHE] Page 1424 evicted via LRU (total: 60800)
+[08:28:20] Scan: Sequential scan complete — 0/20000 rows matched in 81.00 ms
+[08:28:20] Workload: Executing: SELECT customer WHERE c_mktsegment != "BUILDING"
+[08:28:20] Query: SELECT on 'customer' WHERE [c_mktsegment != "BUILDING"]
+[08:28:20] Scan: Sequential scan on 'customer' (20000 rows)
+[08:28:20] Parser: Infix "c_mktsegment != BUILDING" converted to Postfix "c_mktsegment BUILDING !="
+[08:28:46] [CACHE] Page 1624 evicted via LRU (total: 61000)
+[08:29:07] [CACHE] Page 157 evicted via LRU (total: 61200)
+[08:29:27] [CACHE] Page 357 evicted via LRU (total: 61400)
+[08:29:46] [CACHE] Page 557 evicted via LRU (total: 61600)
+[08:30:06] [CACHE] Page 757 evicted via LRU (total: 61800)
+[08:30:26] [CACHE] Page 957 evicted via LRU (total: 62000)
+[08:30:45] [CACHE] Page 1157 evicted via LRU (total: 62200)
+[08:31:05] [CACHE] Page 1357 evicted via LRU (total: 62400)
+[08:31:16] Scan: Sequential scan complete — 20000/20000 rows matched in 176617.00 ms
+[08:31:16] Workload: Executing: SELECT orders WHERE o_orderstatus != "O"
+[08:31:16] Query: SELECT on 'orders' WHERE [o_orderstatus != "O"]
+[08:31:16] Scan: Sequential scan on 'orders' (30000 rows)
+[08:31:16] Parser: Infix "o_orderstatus != O" converted to Postfix "o_orderstatus O !="
+[08:31:31] [CACHE] Page 1557 evicted via LRU (total: 62600)
+[08:32:03] [CACHE] Page 90 evicted via LRU (total: 62800)
+[08:32:34] [CACHE] Page 290 evicted via LRU (total: 63000)
+[08:33:06] [CACHE] Page 490 evicted via LRU (total: 63200)
+[08:33:49] [CACHE] Page 690 evicted via LRU (total: 63400)
+[08:34:33] [CACHE] Page 890 evicted via LRU (total: 63600)
+[08:35:12] [CACHE] Page 1090 evicted via LRU (total: 63800)
+[08:36:04] [CACHE] Page 1290 evicted via LRU (total: 64000)
+[08:36:23] Scan: Sequential scan complete — 30000/30000 rows matched in 306789.00 ms
+[08:36:23] Workload: Executing: SELECT orders WHERE o_orderpriority != "5-LOW"
+[08:36:23] Query: SELECT on 'orders' WHERE [o_orderpriority != "5-LOW"]
+[08:36:23] Scan: Sequential scan on 'orders' (30000 rows)
+[08:36:23] Parser: Infix "o_orderpriority != 5-LOW" converted to Postfix "o_orderpriority 5-LOW !="
+[08:36:41] [CACHE] Page 1490 evicted via LRU (total: 64200)
+[08:37:13] [CACHE] Page 111 evicted via LRU (total: 64400)
+[08:37:44] [CACHE] Page 311 evicted via LRU (total: 64600)
+[08:38:16] [CACHE] Page 511 evicted via LRU (total: 64800)
+[08:38:47] [CACHE] Page 711 evicted via LRU (total: 65000)
+[08:39:21] [CACHE] Page 911 evicted via LRU (total: 65200)
+[08:39:53] [CACHE] Page 1111 evicted via LRU (total: 65400)
+[08:40:24] [CACHE] Page 1311 evicted via LRU (total: 65600)
+[08:40:35] Scan: Sequential scan complete — 30000/30000 rows matched in 252245.00 ms
+[08:40:35] Workload: Executing: UPDATE customer SET c_acctbal=9999.99 WHERE c_custkey=1
+[08:40:35] Query: UPDATE: UPDATE customer SET c_acctbal=9999.99 WHERE c_custkey=1
+[08:40:35] Workload: Executing: UPDATE customer SET c_acctbal=0.00 WHERE c_custkey=2
+[08:40:35] Query: UPDATE: UPDATE customer SET c_acctbal=0.00 WHERE c_custkey=2
+[08:40:35] Workload: Executing: UPDATE orders SET o_orderstatus="F" WHERE o_orderkey=1
+[08:40:35] Query: UPDATE: UPDATE orders SET o_orderstatus="F" WHERE o_orderkey=1
+[08:40:35] Workload: Executing: UPDATE customer SET c_mktsegment="BUILDING" WHERE c_custkey=5000
+[08:40:35] Query: UPDATE: UPDATE customer SET c_mktsegment="BUILDING" WHERE c_custkey=5000
+[08:40:35] Workload: Executing: SELECT customer WHERE c_nationkey == 3 AND c_acctbal > 1000
+[08:40:35] Query: SELECT on 'customer' WHERE [c_nationkey == 3 AND c_acctbal > 1000]
+[08:40:35] Scan: Sequential scan on 'customer' (20000 rows)
+[08:40:35] Parser: Infix "c_nationkey == 3 AND c_acctbal > 1000" converted to Postfix "c_nationkey 3 == c_acctbal 1000 > AND"
+[08:40:35] [CACHE] Page 1511 evicted via LRU (total: 65800)
+[08:40:35] [CACHE] Page 132 evicted via LRU (total: 66000)
+[08:40:35] [CACHE] Page 332 evicted via LRU (total: 66200)
+[08:40:35] [CACHE] Page 532 evicted via LRU (total: 66400)
+[08:40:35] [CACHE] Page 732 evicted via LRU (total: 66600)
+[08:40:35] [CACHE] Page 932 evicted via LRU (total: 66800)
+[08:40:35] [CACHE] Page 1132 evicted via LRU (total: 67000)
+[08:40:36] [CACHE] Page 1332 evicted via LRU (total: 67200)
+[08:40:36] Scan: Sequential scan complete — 0/20000 rows matched in 91.00 ms
+[08:40:36] Workload: Executing: SELECT customer WHERE c_nationkey == 7 OR c_mktsegment == "FURNITURE"
+[08:40:36] Query: SELECT on 'customer' WHERE [c_nationkey == 7 OR c_mktsegment == "FURNITURE"]
+[08:40:36] Scan: Sequential scan on 'customer' (20000 rows)
+[08:40:36] Parser: Infix "c_nationkey == 7 OR c_mktsegment == FURNITURE" converted to Postfix "c_nationkey 7 == c_mktsegment FURNITURE == OR"
+[08:40:36] [CACHE] Page 1532 evicted via LRU (total: 67400)
+[08:40:36] [CACHE] Page 65 evicted via LRU (total: 67600)
+[08:40:36] [CACHE] Page 265 evicted via LRU (total: 67800)
+[08:40:36] [CACHE] Page 465 evicted via LRU (total: 68000)
+[08:40:36] [CACHE] Page 665 evicted via LRU (total: 68200)
+[08:40:36] [CACHE] Page 865 evicted via LRU (total: 68400)
+[08:40:36] [CACHE] Page 1065 evicted via LRU (total: 68600)
+[08:40:36] [CACHE] Page 1265 evicted via LRU (total: 68800)
+[08:40:36] [CACHE] Page 1465 evicted via LRU (total: 69000)
+[08:40:36] Scan: Sequential scan complete — 0/20000 rows matched in 93.00 ms
+[08:40:36] Workload: Executing: SELECT orders WHERE o_totalprice > 490000
+[08:40:36] Query: SELECT on 'orders' WHERE [o_totalprice > 490000]
+[08:40:36] Scan: Sequential scan on 'orders' (30000 rows)
+[08:40:36] Parser: Infix "o_totalprice > 490000" converted to Postfix "o_totalprice 490000 >"
+[08:40:39] [CACHE] Page 1665 evicted via LRU (total: 69200)
+[08:40:41] [CACHE] Page 198 evicted via LRU (total: 69400)
+[08:40:44] [CACHE] Page 398 evicted via LRU (total: 69600)
+[08:40:46] [CACHE] Page 598 evicted via LRU (total: 69800)
+[08:40:49] [CACHE] Page 798 evicted via LRU (total: 70000)
+[08:40:51] [CACHE] Page 998 evicted via LRU (total: 70200)
+[08:40:54] [CACHE] Page 1198 evicted via LRU (total: 70400)
+[08:40:56] Scan: Sequential scan complete — 1473/30000 rows matched in 20293.00 ms
+[08:40:56] Workload: Executing: SELECT orders WHERE o_orderpriority == "2-HIGH" AND o_orderstatus == "O"
+[08:40:56] Query: SELECT on 'orders' WHERE [o_orderpriority == "2-HIGH" AND o_orderstatus == "O"]
+[08:40:56] Scan: Sequential scan on 'orders' (30000 rows)
+[08:40:56] Parser: Infix "o_orderpriority == 2-HIGH AND o_orderstatus == O" converted to Postfix "o_orderpriority 2-HIGH == o_orderstatus O == AND"
+[08:40:56] [CACHE] Page 1398 evicted via LRU (total: 70600)
+[08:40:56] [CACHE] Page 19 evicted via LRU (total: 70800)
+[08:40:56] [CACHE] Page 219 evicted via LRU (total: 71000)
+[08:40:56] [CACHE] Page 419 evicted via LRU (total: 71200)
+[08:40:56] [CACHE] Page 619 evicted via LRU (total: 71400)
+[08:40:56] [CACHE] Page 819 evicted via LRU (total: 71600)
+[08:40:56] [CACHE] Page 1019 evicted via LRU (total: 71800)
+[08:40:56] [CACHE] Page 1219 evicted via LRU (total: 72000)
+[08:40:56] Scan: Sequential scan complete — 0/30000 rows matched in 144.00 ms
+[08:40:56] Workload: Executing: SELECT customer WHERE c_acctbal > 9900
+[08:40:56] Query: SELECT on 'customer' WHERE [c_acctbal > 9900]
+[08:40:56] Scan: Sequential scan on 'customer' (20000 rows)
+[08:40:56] Parser: Infix "c_acctbal > 9900" converted to Postfix "c_acctbal 9900 >"
+[08:40:57] [CACHE] Page 1419 evicted via LRU (total: 72200)
+[08:41:00] [CACHE] Page 40 evicted via LRU (total: 72400)
+[08:41:03] [CACHE] Page 240 evicted via LRU (total: 72600)
+[08:41:06] [CACHE] Page 440 evicted via LRU (total: 72800)
+[08:41:09] [CACHE] Page 640 evicted via LRU (total: 73000)
+[08:41:12] [CACHE] Page 840 evicted via LRU (total: 73200)
+[08:41:15] [CACHE] Page 1040 evicted via LRU (total: 73400)
+[08:41:18] [CACHE] Page 1240 evicted via LRU (total: 73600)
+[08:41:21] [CACHE] Page 1440 evicted via LRU (total: 73800)
+[08:41:22] Scan: Sequential scan complete — 2989/20000 rows matched in 25401.00 ms
+[08:41:22] Workload: Executing: SELECT customer WHERE c_nationkey == 25 AND c_acctbal > 5000
+[08:41:22] Query: SELECT on 'customer' WHERE [c_nationkey == 25 AND c_acctbal > 5000]
+[08:41:22] Scan: Sequential scan on 'customer' (20000 rows)
+[08:41:22] Parser: Infix "c_nationkey == 25 AND c_acctbal > 5000" converted to Postfix "c_nationkey 25 == c_acctbal 5000 > AND"
+[08:41:22] [CACHE] Page 1640 evicted via LRU (total: 74000)
+[08:41:22] [CACHE] Page 173 evicted via LRU (total: 74200)
+[08:41:22] [CACHE] Page 373 evicted via LRU (total: 74400)
+[08:41:22] [CACHE] Page 573 evicted via LRU (total: 74600)
+[08:41:22] [CACHE] Page 773 evicted via LRU (total: 74800)
+[08:41:22] [CACHE] Page 973 evicted via LRU (total: 75000)
+[08:41:22] [CACHE] Page 1173 evicted via LRU (total: 75200)
+[08:41:22] [CACHE] Page 1373 evicted via LRU (total: 75400)
+[08:41:22] Scan: Sequential scan complete — 0/20000 rows matched in 108.00 ms
+[08:41:22] Workload: Executing: SELECT orders WHERE o_custkey < 100 AND o_totalprice > 50000
+[08:41:22] Query: SELECT on 'orders' WHERE [o_custkey < 100 AND o_totalprice > 50000]
+[08:41:22] Scan: Sequential scan on 'orders' (30000 rows)
+[08:41:22] Parser: Infix "o_custkey < 100 AND o_totalprice > 50000" converted to Postfix "o_custkey 100 < o_totalprice 50000 > AND"
+[08:41:23] [CACHE] Page 1573 evicted via LRU (total: 75600)
+[08:41:24] [CACHE] Page 106 evicted via LRU (total: 75800)
+[08:41:26] [CACHE] Page 306 evicted via LRU (total: 76000)
+[08:41:28] [CACHE] Page 506 evicted via LRU (total: 76200)
+[08:41:29] [CACHE] Page 706 evicted via LRU (total: 76400)
+[08:41:31] [CACHE] Page 906 evicted via LRU (total: 76600)
+[08:41:33] [CACHE] Page 1106 evicted via LRU (total: 76800)
+[08:41:35] [CACHE] Page 1306 evicted via LRU (total: 77000)
+[08:41:35] Scan: Sequential scan complete — 945/30000 rows matched in 13507.00 ms
+[08:41:35] Workload: Executing: SELECT customer WHERE c_acctbal > 0 AND c_mktsegment == "HOUSEHOLD"
+[08:41:35] Query: SELECT on 'customer' WHERE [c_acctbal > 0 AND c_mktsegment == "HOUSEHOLD"]
+[08:41:35] Scan: Sequential scan on 'customer' (20000 rows)
+[08:41:35] Parser: Infix "c_acctbal > 0 AND c_mktsegment == HOUSEHOLD" converted to Postfix "c_acctbal 0 > c_mktsegment HOUSEHOLD == AND"
+[08:41:35] [CACHE] Page 1506 evicted via LRU (total: 77200)
+[08:41:35] [CACHE] Page 127 evicted via LRU (total: 77400)
+[08:41:35] [CACHE] Page 327 evicted via LRU (total: 77600)
+[08:41:35] [CACHE] Page 527 evicted via LRU (total: 77800)
+[08:41:35] [CACHE] Page 727 evicted via LRU (total: 78000)
+[08:41:35] [CACHE] Page 927 evicted via LRU (total: 78200)
+[08:41:35] [CACHE] Page 1127 evicted via LRU (total: 78400)
+[08:41:35] [CACHE] Page 1327 evicted via LRU (total: 78600)
+[08:41:35] Scan: Sequential scan complete — 0/20000 rows matched in 87.00 ms
+[08:41:35] Workload: 49 queries processed.
+[08:41:35] Parser: Infix "( c_acctbal > 5000 AND c_mktsegment == BUILDING ) OR c_nationkey == 15" converted to Postfix "c_acctbal 5000 > c_mktsegment BUILDING == AND c_nationkey 15 == OR"
+[08:41:35] Scan: Sequential scan on 'customer' (20000 rows)
+[08:41:35] Parser: Infix "( c_acctbal > 5000 AND c_mktsegment == BUILDING ) OR c_nationkey == 15" converted to Postfix "c_acctbal 5000 > c_mktsegment BUILDING == AND c_nationkey 15 == OR"
+[08:41:35] [CACHE] Page 1527 evicted via LRU (total: 78800)
+[08:41:35] [CACHE] Page 60 evicted via LRU (total: 79000)
+[08:41:35] [CACHE] Page 260 evicted via LRU (total: 79200)
+[08:41:35] [CACHE] Page 460 evicted via LRU (total: 79400)
+[08:41:35] [CACHE] Page 660 evicted via LRU (total: 79600)
+[08:41:35] [CACHE] Page 860 evicted via LRU (total: 79800)
+[08:41:35] [CACHE] Page 1060 evicted via LRU (total: 80000)
+[08:41:36] [CACHE] Page 1260 evicted via LRU (total: 80200)
+[08:41:36] [CACHE] Page 1460 evicted via LRU (total: 80400)
+[08:41:36] Scan: Sequential scan complete — 0/20000 rows matched in 92.00 ms
+[08:41:36] TestA: Parser test complete — 0 rows matched.
+[08:41:36] Scan: Sequential scan on 'customer' (20000 rows)
+[08:41:36] Parser: Infix "c_custkey == 7500" converted to Postfix "c_custkey 7500 =="
+[08:41:36] [CACHE] Page 1660 evicted via LRU (total: 80600)
+[08:41:36] [CACHE] Page 193 evicted via LRU (total: 80800)
+[08:41:36] [CACHE] Page 393 evicted via LRU (total: 81000)
+[08:41:36] [CACHE] Page 593 evicted via LRU (total: 81200)
+[08:41:36] [CACHE] Page 793 evicted via LRU (total: 81400)
+[08:41:36] [CACHE] Page 993 evicted via LRU (total: 81600)
+[08:41:36] [CACHE] Page 1193 evicted via LRU (total: 81800)
+[08:41:36] [CACHE] Page 1393 evicted via LRU (total: 82000)
+[08:41:36] Scan: Sequential scan complete — 0/20000 rows matched in 93.00 ms
+[08:41:36] TestB: Sequential scan for key=7500: 106.0000 ms
+[08:41:36] Index: AVL lookup for key=7500 in table 'customer'
+[08:41:36] Index: key=7500 NOT FOUND (0.0000 ms)
+[08:41:36] TestB: AVL index lookup for key=7500: 4.0000 ms
+[08:41:36] Optimizer: Multi-table join routed via MST: customer -> orders -> lineitem
+[08:41:36] Optimizer: MST edge [customer -- orders] cost=600001
+[08:41:36] Optimizer: MST edge [customer -- lineitem] cost=1000001
+[08:41:36] Join: Executing join in MST order (3 tables)
+[08:41:36] Join: customer JOIN orders JOIN lineitem complete (5 sample rows shown)
+[08:41:36] TestC: 3-table join complete.
+[08:41:36] NanoDB started. Buffer pool capacity: 50 pages
+[08:41:36] Catalog: Registered table 'lineitem' at path 'data/lineitem.db'
+[08:41:36] NanoDB: Table 'lineitem' created.
+[08:41:36] Index: Building AVL index for table 'lineitem' (50000 rows)...
+[08:41:36] [CACHE] Page 199 evicted via LRU (total: 200)
+[08:41:36] [CACHE] Page 399 evicted via LRU (total: 400)
+[08:41:36] [CACHE] Page 599 evicted via LRU (total: 600)
+[08:41:36] [CACHE] Page 799 evicted via LRU (total: 800)
+[08:41:36] [CACHE] Page 999 evicted via LRU (total: 1000)
+[08:41:36] [CACHE] Page 1199 evicted via LRU (total: 1200)
+[08:41:36] [CACHE] Page 1399 evicted via LRU (total: 1400)
+[08:41:36] [CACHE] Page 1599 evicted via LRU (total: 1600)
+[08:41:36] [CACHE] Page 1799 evicted via LRU (total: 1800)
+[08:41:36] [CACHE] Page 1999 evicted via LRU (total: 2000)
+[08:41:36] Index: AVL tree built — 50000 nodes, height=16
+[08:41:36] [CACHE] Page 25 evicted via LRU (total: 2200)
+[08:41:36] TestD: Stress test — 218 LRU evictions in 7.00 ms
+[08:41:36] Flush: Table 'lineitem' flushed to disk (50000 rows)
+[08:41:36] NanoDB shutdown complete.
+[08:41:36] Queue: Job #0 submitted (priority=1): SELECT customer WHERE c_nationkey == 1...
+[08:41:36] Queue: Job #1 submitted (priority=1): SELECT customer WHERE c_nationkey == 2...
+[08:41:36] Queue: Job #2 submitted (priority=1): SELECT customer WHERE c_nationkey == 3...
+[08:41:36] Queue: Job #3 submitted (priority=1): SELECT customer WHERE c_nationkey == 4...
+[08:41:36] Queue: Job #4 submitted (priority=1): SELECT customer WHERE c_nationkey == 5...
+[08:41:36] Queue: Job #5 submitted (priority=1): SELECT customer WHERE c_nationkey == 6...
+[08:41:36] Queue: Job #6 submitted (priority=1): SELECT customer WHERE c_nationkey == 7...
+[08:41:36] Queue: Job #7 submitted (priority=1): SELECT customer WHERE c_nationkey == 8...
+[08:41:36] Queue: Job #8 submitted (priority=1): SELECT customer WHERE c_nationkey == 9...
+[08:41:36] Queue: Job #9 submitted (priority=1): SELECT customer WHERE c_nationkey == 10...
+[08:41:36] Queue: Job #10 submitted (priority=1): SELECT customer WHERE c_nationkey == 11...
+[08:41:36] Queue: Job #11 submitted (priority=1): SELECT customer WHERE c_nationkey == 12...
+[08:41:36] Queue: Job #12 submitted (priority=1): SELECT customer WHERE c_nationkey == 13...
+[08:41:36] Queue: Job #13 submitted (priority=1): SELECT customer WHERE c_nationkey == 14...
+[08:41:36] Queue: Job #14 submitted (priority=1): SELECT customer WHERE c_nationkey == 15...
+[08:41:36] Queue: Job #15 submitted (priority=1): SELECT customer WHERE c_nationkey == 16...
+[08:41:36] Queue: Job #16 submitted (priority=1): SELECT customer WHERE c_nationkey == 17...
+[08:41:36] Queue: Job #17 submitted (priority=1): SELECT customer WHERE c_nationkey == 18...
+[08:41:36] Queue: Job #18 submitted (priority=1): SELECT customer WHERE c_nationkey == 19...
+[08:41:36] Queue: Job #19 submitted (priority=1): SELECT customer WHERE c_nationkey == 20...
+[08:41:36] Queue: Job #20 submitted (priority=1): SELECT customer WHERE c_nationkey == 21...
+[08:41:36] Queue: Job #21 submitted (priority=1): SELECT customer WHERE c_nationkey == 22...
+[08:41:36] Queue: Job #22 submitted (priority=1): SELECT customer WHERE c_nationkey == 23...
+[08:41:36] Queue: Job #23 submitted (priority=1): SELECT customer WHERE c_nationkey == 24...
+[08:41:36] Queue: Job #24 submitted (priority=1): SELECT customer WHERE c_nationkey == 25...
+[08:41:36] Queue: Job #25 submitted (priority=1): SELECT customer WHERE c_nationkey == 1...
+[08:41:36] Queue: Job #26 submitted (priority=1): SELECT customer WHERE c_nationkey == 2...
+[08:41:36] Queue: Job #27 submitted (priority=1): SELECT customer WHERE c_nationkey == 3...
+[08:41:36] Queue: Job #28 submitted (priority=1): SELECT customer WHERE c_nationkey == 4...
+[08:41:36] Queue: Job #29 submitted (priority=1): SELECT customer WHERE c_nationkey == 5...
+[08:41:36] Queue: Job #30 submitted (priority=1): SELECT customer WHERE c_nationkey == 6...
+[08:41:36] Queue: Job #31 submitted (priority=1): SELECT customer WHERE c_nationkey == 7...
+[08:41:36] Queue: Job #32 submitted (priority=1): SELECT customer WHERE c_nationkey == 8...
+[08:41:36] Queue: Job #33 submitted (priority=1): SELECT customer WHERE c_nationkey == 9...
+[08:41:36] Queue: Job #34 submitted (priority=1): SELECT customer WHERE c_nationkey == 10...
+[08:41:36] Queue: Job #35 submitted (priority=1): SELECT customer WHERE c_nationkey == 11...
+[08:41:36] Queue: Job #36 submitted (priority=1): SELECT customer WHERE c_nationkey == 12...
+[08:41:36] Queue: Job #37 submitted (priority=1): SELECT customer WHERE c_nationkey == 13...
+[08:41:36] Queue: Job #38 submitted (priority=1): SELECT customer WHERE c_nationkey == 14...
+[08:41:36] Queue: Job #39 submitted (priority=1): SELECT customer WHERE c_nationkey == 15...
+[08:41:36] Queue: Job #40 submitted (priority=1): SELECT customer WHERE c_nationkey == 16...
+[08:41:36] Queue: Job #41 submitted (priority=1): SELECT customer WHERE c_nationkey == 17...
+[08:41:36] Queue: Job #42 submitted (priority=1): SELECT customer WHERE c_nationkey == 18...
+[08:41:36] Queue: Job #43 submitted (priority=1): SELECT customer WHERE c_nationkey == 19...
+[08:41:36] Queue: Job #44 submitted (priority=1): SELECT customer WHERE c_nationkey == 20...
+[08:41:36] Queue: Job #45 submitted (priority=1): SELECT customer WHERE c_nationkey == 21...
+[08:41:36] Queue: Job #46 submitted (priority=1): SELECT customer WHERE c_nationkey == 22...
+[08:41:36] Queue: Job #47 submitted (priority=1): SELECT customer WHERE c_nationkey == 23...
+[08:41:36] Queue: Job #48 submitted (priority=1): SELECT customer WHERE c_nationkey == 24...
+[08:41:36] Queue: Job #49 submitted (priority=1): SELECT customer WHERE c_nationkey == 25...
+[08:41:36] Queue: Job #50 submitted (priority=0): UPDATE customer SET c_acctbal=9999.99 WHERE c_custkey=1...
+[08:41:36] TestE: Priority queue test — admin job intercepted correctly.
+[08:41:36] Parser: Infix "( ( o_totalprice * 1.5 ) > 100000 AND ( o_custkey % 2 == 0 ) ) OR ( o_orderstatus != O )" converted to Postfix "o_totalprice 1.5 * 100000 > o_custkey 2 % 0 == AND o_orderstatus O != OR"
+[08:41:36] TestF: Complex expression — 10 rows matched.
+[08:41:36] NanoDB started. Buffer pool capacity: 200 pages
+[08:41:37] Catalog: Registered table 'customer' at path 'data/customer.db'
+[08:41:37] NanoDB: Table 'customer' created.
+[08:41:37] Flush: Table 'customer' flushed to disk (20005 rows)
+[08:41:37] TestG: 5 records inserted and flushed. Shutting down...
+[08:41:37] Flush: Table 'customer' flushed to disk (20005 rows)
+[08:41:37] NanoDB shutdown complete.
+[08:41:37] NanoDB started. Buffer pool capacity: 200 pages
+[08:41:37] Catalog: Registered table 'customer' at path 'data/customer.db'
+[08:41:37] NanoDB: Table 'customer' created.
+[08:41:37] Index: Building AVL index for table 'customer' (20005 rows)...
+[08:41:37] [CACHE] Page 199 evicted via LRU (total: 200)
+[08:41:37] [CACHE] Page 399 evicted via LRU (total: 400)
+[08:41:37] [CACHE] Page 599 evicted via LRU (total: 600)
+[08:41:37] [CACHE] Page 799 evicted via LRU (total: 800)
+[08:41:37] [CACHE] Page 999 evicted via LRU (total: 1000)
+[08:41:37] [CACHE] Page 1199 evicted via LRU (total: 1200)
+[08:41:37] [CACHE] Page 1399 evicted via LRU (total: 1400)
+[08:41:37] Index: AVL tree built — 6335 nodes, height=14
+[08:41:37] Index: AVL lookup for key=99001 in table 'customer'
+[08:41:37] Index: key=99001 found at page=1666 slot=8 in 0.0000 ms
+[08:41:37] Index: AVL lookup for key=99002 in table 'customer'
+[08:41:37] Index: key=99002 found at page=1666 slot=9 in 0.0000 ms
+[08:41:37] Index: AVL lookup for key=99003 in table 'customer'
+[08:41:37] Index: key=99003 found at page=1666 slot=10 in 0.0000 ms
+[08:41:37] Index: AVL lookup for key=99004 in table 'customer'
+[08:41:37] Index: key=99004 found at page=1666 slot=11 in 0.0000 ms
+[08:41:37] Index: AVL lookup for key=99005 in table 'customer'
+[08:41:37] Index: key=99005 found at page=1667 slot=0 in 0.0000 ms
+[08:41:37] TestG: Durability test — PASS
+[08:41:37] Flush: Table 'customer' flushed to disk (20005 rows)
+[08:41:37] NanoDB shutdown complete.
+[08:41:37] === Test Runner Complete ===

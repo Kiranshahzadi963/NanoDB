@@ -1,0 +1,66 @@
+# NanoDB Workload File — queries.txt
+# 50 SQL-like queries covering INSERT, SELECT, UPDATE operations
+# Lines beginning with # are comments and are skipped
+
+# === SIMPLE SELECT QUERIES ===
+SELECT customer WHERE c_nationkey == 1
+SELECT customer WHERE c_nationkey == 5
+SELECT customer WHERE c_nationkey == 10
+SELECT customer WHERE c_mktsegment == "BUILDING"
+SELECT customer WHERE c_mktsegment == "AUTOMOBILE"
+SELECT customer WHERE c_mktsegment == "MACHINERY"
+SELECT customer WHERE c_mktsegment == "HOUSEHOLD"
+SELECT customer WHERE c_mktsegment == "FURNITURE"
+SELECT orders WHERE o_orderstatus == "O"
+SELECT orders WHERE o_orderstatus == "F"
+
+# === COMPARISON QUERIES ===
+SELECT customer WHERE c_acctbal > 5000
+SELECT customer WHERE c_acctbal > 8000
+SELECT customer WHERE c_acctbal < 0
+SELECT customer WHERE c_nationkey > 20
+SELECT customer WHERE c_nationkey < 5
+SELECT orders WHERE o_totalprice > 400000
+SELECT orders WHERE o_totalprice > 450000
+SELECT orders WHERE o_shippriority == 0
+SELECT orders WHERE o_orderpriority == "1-URGENT"
+SELECT orders WHERE o_orderpriority == "5-LOW"
+
+# === COMPOUND WHERE CLAUSES (AND / OR) ===
+SELECT customer WHERE c_acctbal > 5000 AND c_nationkey == 1
+SELECT customer WHERE c_acctbal > 7000 AND c_mktsegment == "BUILDING"
+SELECT customer WHERE c_nationkey == 15 OR c_nationkey == 16
+SELECT customer WHERE c_mktsegment == "AUTOMOBILE" AND c_acctbal > 3000
+SELECT orders WHERE o_orderstatus == "O" AND o_shippriority == 0
+SELECT orders WHERE o_totalprice > 200000 AND o_orderstatus == "F"
+SELECT orders WHERE o_custkey == 100 OR o_custkey == 200
+SELECT customer WHERE c_acctbal > 9000 OR c_nationkey == 25
+
+# === COMPLEX NESTED EXPRESSIONS ===
+SELECT customer WHERE (c_acctbal > 5000 AND c_mktsegment == "BUILDING") OR c_nationkey == 15
+SELECT customer WHERE (c_nationkey > 10 AND c_nationkey < 20) OR c_acctbal > 9500
+SELECT orders WHERE (o_totalprice > 300000 AND o_orderstatus == "O") OR o_custkey == 1
+SELECT orders WHERE (o_totalprice > 100000 AND o_orderstatus != "F") OR o_shippriority == 0
+SELECT customer WHERE (c_acctbal > 8000 OR c_acctbal < 0) AND c_mktsegment == "MACHINERY"
+SELECT customer WHERE (c_nationkey == 1 OR c_nationkey == 2) AND c_acctbal > 2000
+
+# === INEQUALITY / NOT-EQUAL QUERIES ===
+SELECT customer WHERE c_mktsegment != "BUILDING"
+SELECT orders WHERE o_orderstatus != "O"
+SELECT orders WHERE o_orderpriority != "5-LOW"
+
+# === UPDATE QUERIES (logged only, executed via admin route) ===
+UPDATE customer SET c_acctbal=9999.99 WHERE c_custkey=1
+UPDATE customer SET c_acctbal=0.00 WHERE c_custkey=2
+UPDATE orders SET o_orderstatus="F" WHERE o_orderkey=1
+UPDATE customer SET c_mktsegment="BUILDING" WHERE c_custkey=5000
+
+# === ADDITIONAL SELECTS ===
+SELECT customer WHERE c_nationkey == 3 AND c_acctbal > 1000
+SELECT customer WHERE c_nationkey == 7 OR c_mktsegment == "FURNITURE"
+SELECT orders WHERE o_totalprice > 490000
+SELECT orders WHERE o_orderpriority == "2-HIGH" AND o_orderstatus == "O"
+SELECT customer WHERE c_acctbal > 9900
+SELECT customer WHERE c_nationkey == 25 AND c_acctbal > 5000
+SELECT orders WHERE o_custkey < 100 AND o_totalprice > 50000
+SELECT customer WHERE c_acctbal > 0 AND c_mktsegment == "HOUSEHOLD"
