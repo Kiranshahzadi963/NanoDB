@@ -130,3 +130,4 @@ https://github.com/YOUR_USERNAME/NanoDB
 | MST (Prim's) | join optimization | O(V²) | O(V²) |
 
 P = pool capacity, N = number of records, T = token count, V = number of tables
+GitHub: https://github.com/Kiranshahzadi963/NanoDB
