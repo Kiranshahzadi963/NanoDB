@@ -110,9 +110,8 @@ HashMap maps pageId → DLL node pointer, enabling O(1) moveToFront and O(1) tai
 ---
 
 ## GitHub Repository
-https://github.com/YOUR_USERNAME/NanoDB
+https://github.com/Kiranshahzadi963/NanoDB
 
-*(Replace with your actual repo URL after pushing)*
 
 ---
 
